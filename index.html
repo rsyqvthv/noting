@@ -183,6 +183,8 @@ Error message and password prompt
 
 <li>XMLHttpRequest 409 错误</li>
 
+<li>如何设置tiddlywiki和github同步</li>
+
 </ul>
 </p>
 
@@ -10091,13 +10093,13 @@ Error message and password prompt
 <div created="20210715153313226" modified="20210715153314679" title="$:/SiteTitle">
 <pre>Noting</pre>
 </div>
-<div created="20210715162237803" modified="20210715162239702" title="$:/state/showeditpreview">
+<div created="20210715162237803" modified="20210715164252519" title="$:/state/showeditpreview">
 <pre>no</pre>
 </div>
-<div created="20210715152809979" modified="20210715152809979" title="$:/state/tab-1749438307">
+<div created="20210715152809979" modified="20210715164315736" title="$:/state/tab-1749438307">
 <pre>$:/core/ui/ControlPanel/Saving</pre>
 </div>
-<div created="20210715152811843" modified="20210715152811843" title="$:/state/tab-2065006209">
+<div created="20210715152811843" modified="20210715164333336" title="$:/state/tab-2065006209">
 <pre>$:/core/ui/ControlPanel/Saving/GitHub</pre>
 </div>
 <div created="20210715153419296" modified="20210715155410563" title="$:/state/tab/sidebar--595412856">
@@ -10106,7 +10108,7 @@ Error message and password prompt
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20210715161945339" list="[[XMLHttpRequest 409 错误]] tiddlywiki和userscript的冲突" modified="20210715161945339" title="$:/StoryList">
+<div created="20210715164114078" list="$:/ControlPanel 如何设置tiddlywiki和github同步" modified="20210715164114078" title="$:/StoryList">
 <pre></pre>
 </div>
 <div author="JeremyRuston" core-version="&gt;=5.0.0" dependents="$:/themes/tiddlywiki/vanilla" description="Emphasises individual tiddlers" name="Snow White" plugin-priority="0" plugin-type="theme" title="$:/themes/tiddlywiki/snowwhite" type="application/json" version="5.1.23">
@@ -10245,6 +10247,32 @@ concurrent saving!
 &lt;&lt;&lt;
 
 原来github不允许刷新太过频繁. 所以建议取消autosave, 且不要太过频繁的使用保存即可解决问题.
+</pre>
+</div>
+<div created="20210715162819777" modified="20210715164936449" tags="" title="如何设置tiddlywiki和github同步">
+<pre>[[参考|https://kookma.github.io/TW5-GitHub-Saver/]], 不过他说的非常的专业, 简单的说是: 
+
+* 在github建立一个repo [[link|Create a GitHub repository]]
+** 设置为开放, 这样才可以免费使用page
+
+* 将tiddlywiki文件重命名为index.html后, 上传到repo中. 
+** 设置repo的page: repo &gt; settings &gt; branch: main, folder: roo &gt; save
+** 等几秒让github配置好, 然后访问: `https://username.github.io/repo.name/`
+
+* 访问[[create personal access token|https://github.com/settings/tokens]], 新建一个新的token, scope只选择repo和下面的相应选项即可.
+** 拷贝token代码备用.
+
+* 回到上面的page页面, 这时应该打开了刚才上传到github端的tiddlywiki. 
+** 点击设置按钮访问: $:/ControlPanel, saving &gt; github saver
+*** __username__ 填写github的username
+*** __token__ 填写刚才备用的token
+*** __target repo__ 以这个格式填写: username/repo.name
+*** __target branch__ 根据上面设置page时候的选择: main
+*** __path to target file__ 根据上面设置page时候的选择: /
+*** __filename__ 根据我们上传的文件: `index.html`
+*** __server api url__ 不用更改, 默认即可.
+
+以上步骤都完成后, 在tiddlywiki中选择save. 这时不会弹出下载框, 而是会直接提示saved, 这说明文档已经保存到了github中了.
 </pre>
 </div>
 
