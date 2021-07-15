@@ -165,6 +165,8 @@ Error message and password prompt
 
 <li>$:/state/showeditpreview</li>
 
+<li>$:/state/tab--1963855381</li>
+
 <li>$:/state/tab-1749438307</li>
 
 <li>$:/state/tab-2065006209</li>
@@ -179,11 +181,19 @@ Error message and password prompt
 
 <li>$:/themes/tiddlywiki/vanilla</li>
 
+<li>$:/themes/tiddlywiki/vanilla/metrics/storyright</li>
+
+<li>$:/themes/tiddlywiki/vanilla/metrics/storywidth</li>
+
+<li>$:/themes/tiddlywiki/vanilla/metrics/tiddlerwidth</li>
+
 <li>tiddlywiki和userscript的冲突</li>
 
 <li>XMLHttpRequest 409 错误</li>
 
 <li>如何设置tiddlywiki和github同步</li>
+
+<li>设置tiddler的宽度</li>
 
 </ul>
 </p>
@@ -10096,8 +10106,11 @@ Error message and password prompt
 <div created="20210715162237803" modified="20210715164252519" title="$:/state/showeditpreview">
 <pre>no</pre>
 </div>
-<div created="20210715152809979" modified="20210715164315736" title="$:/state/tab-1749438307">
-<pre>$:/core/ui/ControlPanel/Saving</pre>
+<div created="20210715165134789" modified="20210715165134789" title="$:/state/tab--1963855381">
+<pre>$:/themes/tiddlywiki/vanilla/themetweaks</pre>
+</div>
+<div created="20210715152809979" modified="20210715165318250" title="$:/state/tab-1749438307">
+<pre>$:/core/ui/ControlPanel/Appearance</pre>
 </div>
 <div created="20210715152811843" modified="20210715164333336" title="$:/state/tab-2065006209">
 <pre>$:/core/ui/ControlPanel/Saving/GitHub</pre>
@@ -10108,7 +10121,7 @@ Error message and password prompt
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20210715164114078" list="$:/ControlPanel 如何设置tiddlywiki和github同步" modified="20210715164114078" title="$:/StoryList">
+<div created="20210715164114078" list="设置tiddler的宽度 如何设置tiddlywiki和github同步" modified="20210715165123151" title="$:/StoryList">
 <pre></pre>
 </div>
 <div author="JeremyRuston" core-version="&gt;=5.0.0" dependents="$:/themes/tiddlywiki/vanilla" description="Emphasises individual tiddlers" name="Snow White" plugin-priority="0" plugin-type="theme" title="$:/themes/tiddlywiki/snowwhite" type="application/json" version="5.1.23">
@@ -10220,6 +10233,15 @@ Error message and password prompt
     }
 }</pre>
 </div>
+<div created="20210715165601562" modified="20210715165926705" title="$:/themes/tiddlywiki/vanilla/metrics/storyright">
+<pre>940px</pre>
+</div>
+<div created="20210715165605942" modified="20210715165930379" title="$:/themes/tiddlywiki/vanilla/metrics/storywidth">
+<pre>940px</pre>
+</div>
+<div created="20210715165612959" modified="20210715165937563" title="$:/themes/tiddlywiki/vanilla/metrics/tiddlerwidth">
+<pre>856px</pre>
+</div>
 <div created="20210715160625408" modified="20210715161744783" tags="" title="tiddlywiki和userscript的冲突">
 <pre>一些user scripts对tiddlywiki有影响. 比如:HTML5 video player enhanced script就会引起在编辑tiddlywiki的时候, 一按下空格键就会显示javascript错误.</pre>
 </div>
@@ -10273,6 +10295,17 @@ concurrent saving!
 *** __server api url__ 不用更改, 默认即可.
 
 以上步骤都完成后, 在tiddlywiki中选择save. 这时不会弹出下载框, 而是会直接提示saved, 这说明文档已经保存到了github中了.
+</pre>
+</div>
+<div created="20210715165042249" modified="20210715170006431" tags="" title="设置tiddler的宽度">
+<pre>[[根据这里|https://tiddlywiki.com/static/How%2520to%2520widen%2520tiddlers%2520(aka%2520storyriver).html]]
+
+* $:/ControlPanel &gt; Appearance &gt; Theme Tweaks
+* 查找下面三个参数: `story right`, `story width`, and `tiddler width`
+
+前两个是一样的, 默认770, 后一个比前面的略微小一点, 默认小14, 是686
+我改成960和946.
+
 </pre>
 </div>
 
