@@ -199,6 +199,8 @@ Error message and password prompt
 
 <li>XMLHttpRequest 409 错误</li>
 
+<li>如何记住上次打开的tiddler</li>
+
 <li>如何设置tiddlywiki和github同步</li>
 
 <li>设置tiddler的宽度</li>
@@ -10141,7 +10143,7 @@ Error message and password prompt
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20210717161145512" list="[[XMLHttpRequest 409 错误]] 如何设置tiddlywiki和github同步 设置tiddler的宽度" modified="20210717161622395" title="$:/StoryList">
+<div created="20210717161145512" list="如何记住上次打开的tiddler [[XMLHttpRequest 409 错误]] 如何设置tiddlywiki和github同步 设置tiddler的宽度" modified="20210717161622395" title="$:/StoryList">
 <pre></pre>
 </div>
 <div author="JeremyRuston" core-version="&gt;=5.0.0" dependents="$:/themes/tiddlywiki/vanilla" description="Emphasises individual tiddlers" name="Snow White" plugin-priority="0" plugin-type="theme" title="$:/themes/tiddlywiki/snowwhite" type="application/json" version="5.1.23">
@@ -10290,6 +10292,11 @@ concurrent saving!
 
 原来github不允许刷新太过频繁. 所以建议取消autosave, 且不要太过频繁的使用保存即可解决问题.
 </pre>
+</div>
+<div created="20210717161813353" modified="20210717162130378" tags="" title="如何记住上次打开的tiddler">
+<pre>[[根据这里|https://tiddlywiki.com/static/Preserving%2520open%2520tiddlers%2520at%2520startup.html]]
+
+tiddlywiki自动将当前打开的tiddler保存在 $:/StoryList 中, 在$:/DefaultTiddlers中设置: `[list[$:/StoryList]]`, 即可调用这个list, 结果就是自动打开上次保存时打开的tiddler.</pre>
 </div>
 <div created="20210715162819777" modified="20210715164936449" tags="" title="如何设置tiddlywiki和github同步">
 <pre>[[参考|https://kookma.github.io/TW5-GitHub-Saver/]], 不过他说的非常的专业, 简单的说是: 
