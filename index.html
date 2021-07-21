@@ -145,6 +145,10 @@ Error message and password prompt
 
 <li>$:/config/Manager/Show</li>
 
+<li>$:/config/Navigation/UpdateAddressBar</li>
+
+<li>$:/config/Navigation/UpdateHistory</li>
+
 <li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/advanced-search</li>
 
 <li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/more-page-actions</li>
@@ -267,6 +271,8 @@ Error message and password prompt
 
 <li>关于tiddlywiki的快捷键</li>
 
+<li>如何使用浏览器的前进/后退在tiddlywiki中遍历访问历史</li>
+
 <li>如何制作全站的TOC? table of contents</li>
 
 <li>如何增加favicon</li>
@@ -308,6 +314,12 @@ Error message and password prompt
 </div>
 <div created="20210718052110696" modified="20210718052112504" title="$:/config/Manager/Show">
 <pre>tiddlers</pre>
+</div>
+<div created="20210721162251489" modified="20210721162251489" title="$:/config/Navigation/UpdateAddressBar">
+<pre>permaview</pre>
+</div>
+<div created="20210721162311701" modified="20210721162311701" title="$:/config/Navigation/UpdateHistory">
+<pre>yes</pre>
 </div>
 <div created="20210718052020997" modified="20210718052022603" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/advanced-search">
 <pre>hide</pre>
@@ -10412,8 +10424,8 @@ Error message and password prompt
 <div created="20210718041647966" modified="20210718041647966" title="$:/state/tab--4179469">
 <pre>$:/plugins/tg/toolbar/settings</pre>
 </div>
-<div created="20210715152809979" modified="20210721095725436" title="$:/state/tab-1749438307">
-<pre>$:/core/ui/ControlPanel/Info</pre>
+<div created="20210715152809979" modified="20210721162226224" title="$:/state/tab-1749438307">
+<pre>$:/core/ui/ControlPanel/Settings</pre>
 </div>
 <div created="20210715152811843" modified="20210715164333336" title="$:/state/tab-2065006209">
 <pre>$:/core/ui/ControlPanel/Saving/GitHub</pre>
@@ -10430,7 +10442,7 @@ Error message and password prompt
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20210721161531045" list="tiddlywiki的访问历史 $:/HistoryList [[如何制作全站的TOC? table of contents]] 关于tiddlywiki的快捷键 WikiText tiddlywiki中如何将有某个关键字(搜索)的tiddler列出来 有没有可以快速分享到tiddlywiki的浏览器插件? 联络我" modified="20210721161531045" title="$:/StoryList">
+<div created="20210721161531045" list="如何使用浏览器的前进/后退在tiddlywiki中遍历访问历史 tiddlywiki的访问历史 [[如何制作全站的TOC? table of contents]] 关于tiddlywiki的快捷键 WikiText tiddlywiki中如何将有某个关键字(搜索)的tiddler列出来 有没有可以快速分享到tiddlywiki的浏览器插件? 联络我" modified="20210721162208759" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20210718044423757" list="$:/plugins/tiddlywiki/menubar/items/hamburger $:/plugins/tiddlywiki/menubar/items/topleftbar $:/plugins/tiddlywiki/menubar/items/contents $:/plugins/tiddlywiki/menubar/items/search $:/plugins/tiddlywiki/menubar/items/pagecontrols $:/plugins/tiddlywiki/menubar/items/server $:/plugins/tiddlywiki/menubar/items/toprightbar $:/plugins/tiddlywiki/menubar/items/sidebar" modified="20210718044445002" title="$:/tags/MenuBar">
@@ -10704,6 +10716,20 @@ concurrent saving!
 需要记住的就是: `ctrl+enter`, `escape`, `alt+n`, `ctrl+shift+f`, `ctrl+shift+a`
 
 更多的快捷键以及设置, 可以到 $:/ControlPanel 中的 keyboard shortcuts 中进行.</pre>
+</div>
+<div created="20210721162001770" modified="20210721162348600" tags="" title="如何使用浏览器的前进/后退在tiddlywiki中遍历访问历史">
+<pre>根据 [[BACK and FORWARD buttons for TiddlyWiki|https://groups.google.com/g/tiddlywikidev/c/dFXVezMiNU8/m/3UHLEhvfZRUJ]]
+
+&lt;&lt;&lt;
+Visit the ControlPanel tab &quot;Settings&quot; and look for the following settings:
+
+* Navigation Address Bar - set to &quot;Include the target tiddler and the current story sequence&quot;
+* Navigation History - set to &quot;Update history&quot;
+&lt;&lt;&lt;
+
+如此设置即可. 
+
+</pre>
 </div>
 <div created="20210718045120107" modified="20210719055950905" tags="@question" title="如何制作全站的TOC? table of contents">
 <pre>[[Table-of-Contents Macros|https://tiddlywiki.com/#Table-of-Contents%20Macros]]</pre>
