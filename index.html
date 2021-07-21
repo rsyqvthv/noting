@@ -10673,7 +10673,7 @@ tiddlywiki原生支持拖拽,
 <div created="20210719050024129" modified="20210719050134793" tags="@question" title="tiddlywiki中如何将有某个关键字(搜索)的tiddler列出来">
 <pre></pre>
 </div>
-<div created="20210721162609044" modified="20210721163217400" tags="" title="tiddlywiki中的小部件(widgets)">
+<div created="20210721162609044" modified="20210721163631282" tags="" title="tiddlywiki中的小部件(widgets)">
 <pre>根据: [[TiddlyWiki|https://tiddlywiki.com/#Widgets]]
 
 widgets是介于WikiText和浏览器显示之间的一个介质, 它类似于element至于tag和html之间的作用. 它的语法也和html类似, 只是多了一个$符号. 比如显示一个按钮 &lt;$button message=&quot;tm-close-tiddler&quot;&gt;Close Me!&lt;/$button&gt;
@@ -10681,6 +10681,13 @@ widgets是介于WikiText和浏览器显示之间的一个介质, 它类似于ele
 ```
 &lt;$button message=&quot;tm-close-tiddler&quot;&gt;Close Me!&lt;/$button&gt;
 ```
+
+这样tiddlywiki对于内容的操作就就有了更多的工具:
+
+* 显示某个元素, 比如按钮/图片
+* 调用macro
+* 萃取(transclude)任何位置的文字片段
+* 标记某个文字为title
 
 
 
